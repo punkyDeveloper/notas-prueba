@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-<<<<<<< HEAD
+
     "target": "esnext",
     "module": "Node16",
     "strict": true,
@@ -16,25 +16,4 @@
   "include": ["src/**/*"],
   "exclude": ["node_modules", "**/*.spec.ts", "**/*.spec.tsx", "src/web/src/store.d.ts"]
 }
-=======
-    "module": "Node16",
-    "moduleResolution": "node16",
-    "target": "esnext",
-    "jsx": "react",
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "allowImportingTsExtensions": true, // Habilitar esta opción
-    "emitDeclarationOnly": true,
-    "declaration": true
-  },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx"
-  ],
-  "exclude": ["node_modules"]
-}
->>>>>>> 5a3a5168e8c1fc596e9faff5196857218199aa54
+
