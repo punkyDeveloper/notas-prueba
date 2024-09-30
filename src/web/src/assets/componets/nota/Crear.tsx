@@ -1,6 +1,10 @@
 'use client';
 
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
+=======
+import React, { useState, useEffect } from 'react'; // Importar React explícitamente
+>>>>>>> 5a3a5168e8c1fc596e9faff5196857218199aa54
 import { Dialog } from '@headlessui/react';
 
 export default function NotaModal() {
@@ -14,7 +18,6 @@ export default function NotaModal() {
   // Obtener el usuarioId del localStorage al cargar el componente
   useEffect(() => {
     const id = localStorage.getItem('usuarioId');
-
     setUsuarioId(id);
   }, []);
 
@@ -25,9 +28,9 @@ export default function NotaModal() {
       setError('ID de usuario no disponible. Por favor inicia sesión nuevamente.');
       return;
     }
-    
+
     // Verifica si los campos están vacíos
-    if (!nombre || !nota || !usuarioId) {
+    if (!nombre || !nota) {
       setError('Por favor completa todos los campos.');
       return;
     }
@@ -45,23 +48,24 @@ export default function NotaModal() {
       });
 
       if (!response.ok) {
-        setError('No se pudo guardar su nota');
+        const errorMessage = await response.text(); // Obtener mensaje de error específico
+        setError(`No se pudo guardar su nota: ${errorMessage}`);
         return;
       }
 
-      const data = await response.json();
       setSuccess('Nota guardada con éxito');
       setNota('');
       setNombre('');
 
-      // Recargar la página 
+      // Limpiar el estado después de guardar sin recargar la página
       setTimeout(() => {
-        window.location.reload();
-      }, 100); 
-      
+        setSuccess('');
+        setOpen(false); // Cerrar modal automáticamente después de un breve retraso
+      }, 1500);
+
     } catch (err) {
       console.error(err);
-      setError('No se pudo guardar su nota');
+      setError('Ocurrió un error al guardar su nota. Inténtelo de nuevo más tarde.');
     }
   };
 

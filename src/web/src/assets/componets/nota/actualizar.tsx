@@ -1,5 +1,9 @@
-import { Dialog } from '@headlessui/react';
 import React, { useEffect, useState } from 'react';
+import { Dialog } from '@headlessui/react';
+<<<<<<< HEAD
+import React, { useEffect, useState } from 'react';
+=======
+>>>>>>> 5a3a5168e8c1fc596e9faff5196857218199aa54
 
 interface ActualizarProps {
   notaId: string;
@@ -24,6 +28,7 @@ const Actualizar: React.FC<ActualizarProps> = ({ notaId, onUpdateSuccess, onClos
         setNota(data.nota);
       } catch (err) {
         setError('Error al cargar la nota.');
+        console.error(err); // Agregar para ver el error en la consola
       }
     };
 
@@ -56,6 +61,7 @@ const Actualizar: React.FC<ActualizarProps> = ({ notaId, onUpdateSuccess, onClos
       onClose(); // Cierra el modal
     } catch (err) {
       setError('Error al actualizar la nota.');
+      console.error(err); // Agregar para ver el error en la consola
     }
   };
 

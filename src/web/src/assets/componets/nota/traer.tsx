@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from 'react';
+<<<<<<< HEAD
 import Eliminar from './eliminar';
 import Actualizar from './actualizar';
+=======
+import Eliminar from './eliminar.tsx';
+import Actualizar from './actualizar.tsx';
+>>>>>>> 5a3a5168e8c1fc596e9faff5196857218199aa54
 
 interface Nota {
   _id: string;

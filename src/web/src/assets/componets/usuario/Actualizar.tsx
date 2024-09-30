@@ -1,5 +1,9 @@
 import { Dialog } from '@headlessui/react';
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
+=======
+import React,{ useState, useEffect } from 'react';
+>>>>>>> 5a3a5168e8c1fc596e9faff5196857218199aa54
 
 interface ActualizarProps {
     isOpen: boolean;

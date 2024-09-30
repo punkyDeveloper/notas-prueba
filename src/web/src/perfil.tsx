@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react'; 
+=======
+import React , { useState, useEffect } from 'react'; 
+>>>>>>> 5a3a5168e8c1fc596e9faff5196857218199aa54
 import { useNavigate } from 'react-router-dom';
-import Nav from './assets/componets/componentesAdicionales/nav';
-import Eliminar from './assets/componets/usuario/Eliminar';
-import Actualizar from './assets/componets/usuario/Actualizar';
+import Nav from './assets/componets/componentesAdicionales/nav.tsx';
+import Eliminar from './assets/componets/usuario/Eliminar.tsx';
+import Actualizar from './assets/componets/usuario/Actualizar.tsx';
 
 export default function Profile() {
   const navigate = useNavigate(); // Hook para navegación

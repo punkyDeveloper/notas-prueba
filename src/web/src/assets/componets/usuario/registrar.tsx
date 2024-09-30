@@ -1,8 +1,14 @@
+import React from 'react';
 import { Field, Label } from '@headlessui/react';
 import { useNavigate } from 'react-router-dom';
+<<<<<<< HEAD
 import React, { useState } from 'react';
 
 import Modal from '../componentesAdicionales/modalRegistroExitoso';
+=======
+import { useState } from 'react';
+import Modal from '../componentesAdicionales/modalRegistroExitoso.tsx';
+>>>>>>> 5a3a5168e8c1fc596e9faff5196857218199aa54
 
 export default function Example() {
     const navigate = useNavigate(); // Hook para navegación
