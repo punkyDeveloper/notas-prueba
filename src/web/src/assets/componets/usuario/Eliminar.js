@@ -1,0 +1,6 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { Dialog } from '@headlessui/react';
+const Eliminar = ({ isOpen, onClose, onConfirm }) => {
+    return (_jsxs(Dialog, { open: isOpen, onClose: onClose, className: "relative z-10", children: [_jsx("div", { className: "fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" }), _jsx("div", { className: "fixed inset-0 z-10 flex items-center justify-center p-4", children: _jsx(Dialog.Panel, { className: "relative w-full max-w-md overflow-hidden rounded-lg bg-white shadow-xl transition-all", children: _jsxs("div", { className: "p-6", children: [_jsx("h2", { className: "text-lg font-semibold text-gray-900", children: "Eliminar Cuenta" }), _jsx("p", { className: "mt-2 text-gray-600", children: "\u00BFEst\u00E1s seguro de que deseas eliminar tu cuenta? Esta acci\u00F3n no se puede deshacer." }), _jsxs("div", { className: "mt-6 flex justify-end space-x-4", children: [_jsx("button", { onClick: onClose, className: "inline-flex justify-center rounded-md bg-gray-300 px-4 py-2 text-sm font-medium text-gray-800 hover:bg-gray-400", children: "Cancelar" }), _jsx("button", { onClick: onConfirm, className: "inline-flex justify-center rounded-md bg-red-600 px-4 py-2 text-sm font-medium text-white hover:bg-red-500", children: "Eliminar" })] })] }) }) })] }));
+};
+export default Eliminar;

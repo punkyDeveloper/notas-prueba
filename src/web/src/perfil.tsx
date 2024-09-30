@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'; 
+import React, { useState, useEffect } from 'react'; 
 import { useNavigate } from 'react-router-dom';
 import Nav from './assets/componets/componentesAdicionales/nav';
 import Eliminar from './assets/componets/usuario/Eliminar';

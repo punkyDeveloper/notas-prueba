@@ -1,6 +1,7 @@
 import { Field, Label } from '@headlessui/react';
 import { useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import React, { useState } from 'react';
+
 import Modal from '../componentesAdicionales/modalRegistroExitoso';
 
 export default function Example() {

@@ -1,5 +1,5 @@
 import { Dialog } from '@headlessui/react';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 interface ActualizarProps {
   notaId: string;

@@ -1,3 +1,4 @@
+import React from 'react';
 import Nav from './assets/componets/componentesAdicionales/nav'
 import Crearnota from "./assets/componets/nota/Crear";
 import Notas from "./assets/componets/nota/traer"
