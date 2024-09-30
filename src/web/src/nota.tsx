@@ -1,6 +1,7 @@
-import Nav from './assets/componets/componentesAdicionales/nav'
-import Crearnota from "./assets/componets/nota/Crear";
-import Notas from "./assets/componets/nota/traer"
+import React from 'react';
+import Nav from './assets/componets/componentesAdicionales/nav.tsx'
+import Crearnota from "./assets/componets/nota/Crear.tsx";
+import Notas from "./assets/componets/nota/traer.tsx"
 export default function Example() {
         
     return (

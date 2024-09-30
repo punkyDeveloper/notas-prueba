@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
-import Eliminar from './eliminar';
-import Actualizar from './actualizar';
+import React, { useEffect, useState } from 'react';
+import Eliminar from './eliminar.tsx';
+import Actualizar from './actualizar.tsx';
 
 interface Nota {
   _id: string;
