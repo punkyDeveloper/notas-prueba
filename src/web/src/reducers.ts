@@ -1,4 +1,4 @@
-import { CHANGE_VIEW } from './actions';
+import { CHANGE_VIEW } from './actions.ts';
 
 // Define el estado inicial (por defecto, el usuario está en la vista de login)
 const initialState = {
